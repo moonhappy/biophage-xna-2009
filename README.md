@@ -32,7 +32,7 @@ The project is split into two distinct parts:
 
 ## 1. LNA Game Engine
 
-`Project\ Virus/Trunk/LNAGameEngine/`
+`Project\ Virus/Trunk/Biophage/LNAGameEngine/`
 
 LNA is a Visual Studio C# library that extends XNA with a Game Scene/Object manger, Resource manager, shaders, UI, Networking manager, and various other common features to help support development of XNA games.
 
@@ -40,6 +40,6 @@ It builds a set a `dll` CLR libraries.
 
 ## 2. Project Virus
 
-`Project\ Virus/Trunk/LNAGameEngine/`
+`Project\ Virus/Trunk/Biophage/Biophage/`
 
 Visual Studio C# executable containing all code, content, and documentation pertaining to the Biophage game itself.
