@@ -1,0 +1,15 @@
+Some resources for this work have originated from publicly avaliable sources. The following is the explicit licenses for each outsourced work.
+
+ButtonImages	- Microsoft Permissive License (Ms-PL)
+
+JigLibX		- Microsoft Public License (Ms-PL)
+
+
+
+Shout outs:
+
+Games Tech course at CSU
+
+XNA and Community Games
+
+Blender and MaPZone

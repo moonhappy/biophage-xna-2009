@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{C49314E2-72D6-4190-B744-6C79CDD5647B}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Xbox 360</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LNA</RootNamespace>
+    <AssemblyName>LNAGameEngine_XBOX</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Xbox 360</XnaPlatform>
+    <XnaCrossPlatformGroupID>c9ec2be5-e718-4e86-863a-104ceb157c77</XnaCrossPlatformGroupID>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <XnaUpgrade>
+    </XnaUpgrade>
+    <XnaOutputType>Library</XnaOutputType>
+    <XnaProfile>HiDef</XnaProfile>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE;XBOX;XBOX360</DefineConstants>
+    <XnaCompressContent>True</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;XBOX;XBOX360</DefineConstants>
+    <XnaCompressContent>True</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="GameEngine\Core\AsyncTasks\AsyncReturnPackage.cs" />
+    <Compile Include="GameEngine\Core\AsyncTasks\AsyncSceneLoad.cs" />
+    <Compile Include="GameEngine\Core\AsyncTasks\AsyncSceneUnload.cs" />
+    <Compile Include="GameEngine\Core\AsyncTasks\AsyncTask.cs" />
+    <Compile Include="GameEngine\Core\AsyncTasks\AsyncTaskManager.cs" />
+    <Compile Include="GameEngine\Core\LnaGame.cs" />
+    <Compile Include="GameEngine\Core\LnaNetworkSessionComponent.cs" />
+    <Compile Include="GameEngine\DebugManager.cs" />
+    <Compile Include="GameEngine\IInitialise.cs" />
+    <Compile Include="GameEngine\IInput.cs" />
+    <Compile Include="GameEngine\ILoadable.cs" />
+    <Compile Include="GameEngine\IObject.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FuzzyModule.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FuzzyRule.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FuzzySet.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FuzzySetProxy.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FuzzyVariable.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FzAND.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FzFAIRLY.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FzNOT.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FzOR.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FzSetLeftShoulder.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FzSetRightShoulder.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FzSetSingleton.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FzSetTriangle.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\FzVERY.cs" />
+    <Compile Include="GameEngine\Modules\FuzzyLogic\IFuzzyTerm.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\Assets\Asset.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\Assets\CircleAsset.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\Assets\EllipseAsset.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\Assets\FontTextureAsset.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\Assets\ModelAsset.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\Assets\QuadAsset.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\Assets\RoundCornerQuadAsset.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\Assets\SquareAsset.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\Assets\TextureAsset.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\CameraGObj.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\FramerateGObj.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\GameObject.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\IGameObject.cs" />
+    <Compile Include="GameEngine\Objects\GameObjects\Sprites\SpriteGObj.cs" />
+    <Compile Include="GameEngine\Objects\Scenes\ISceneTree.cs" />
+    <Compile Include="GameEngine\Objects\Scenes\Scene.cs" />
+    <Compile Include="GameEngine\Objects\Scenes\SceneManager.cs" />
+    <Compile Include="GameEngine\Objects\Scenes\Stage.cs" />
+    <Compile Include="GameEngine\Objects\SynchroniseWithThreadPool.cs" />
+    <Compile Include="GameEngine\Objects\UI\Menu\Menu.cs" />
+    <Compile Include="GameEngine\Objects\UI\Menu\MenuButton.cs" />
+    <Compile Include="GameEngine\Objects\UI\Menu\MenuLabel.cs" />
+    <Compile Include="GameEngine\Objects\UI\Menu\MenuObject.cs" />
+    <Compile Include="GameEngine\Objects\UI\Menu\MenuToggle.cs" />
+    <Compile Include="GameEngine\Objects\UI\Menu\MenuValue.cs" />
+    <Compile Include="GameEngine\Objects\UI\Menu\MenuWindow.cs" />
+    <Compile Include="GameEngine\Objects\UI\UIObject.cs" />
+    <Compile Include="GameEngine\Resources\Applyable\EffectRes.cs" />
+    <Compile Include="GameEngine\Resources\Applyable\EffectResHandle.cs" />
+    <Compile Include="GameEngine\Resources\Applyable\RenderTargetRes.cs" />
+    <Compile Include="GameEngine\Resources\Applyable\RenderTargetResHandle.cs" />
+    <Compile Include="GameEngine\Resources\Applyable\SpriteFontRes.cs" />
+    <Compile Include="GameEngine\Resources\Applyable\SpriteFontResHandle.cs" />
+    <Compile Include="GameEngine\Resources\Applyable\TextureRes.cs" />
+    <Compile Include="GameEngine\Resources\Applyable\TextureResHandle.cs" />
+    <Compile Include="GameEngine\Resources\Drawable\DrawableRes.cs" />
+    <Compile Include="GameEngine\Resources\Drawable\DrawableResHandle.cs" />
+    <Compile Include="GameEngine\Resources\Drawable\ModelRes.cs" />
+    <Compile Include="GameEngine\Resources\Drawable\ModelResHandle.cs" />
+    <Compile Include="GameEngine\Resources\IResource.cs" />
+    <Compile Include="GameEngine\Resources\IResourceHandle.cs" />
+    <Compile Include="GameEngine\Resources\Playable\PlayableRes.cs" />
+    <Compile Include="GameEngine\Resources\Playable\PlayableResHandle.cs" />
+    <Compile Include="GameEngine\Resources\Playable\SoundRes.cs" />
+    <Compile Include="GameEngine\Resources\Playable\SoundResHandle.cs" />
+    <Compile Include="GameEngine\Resources\Resource.cs" />
+    <Compile Include="GameEngine\Resources\ResourceHandle.cs" />
+    <Compile Include="GameEngine\Resources\ResourceLoader.cs" />
+    <Compile Include="GameEngine\Resources\ResourceManager.cs" />
+    <Compile Include="GameEngine\Resources\ResourceTracker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>9d452b29-4b06-4566-a580-5ca9908c9054</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 3.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GameEngine\Objects\UI\HUD\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
