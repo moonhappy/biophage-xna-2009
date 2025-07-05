@@ -36,7 +36,7 @@ The project is split into two distinct parts:
 
 LNA is a Visual Studio C# library that extends XNA with a Game Scene/Object manger, Resource manager, shaders, UI, Networking manager, and various other common features to help support development of XNA games.
 
-It builds a set a `dll` CLR libraries.
+It builds a set of `dll` CLR/IL libraries.
 
 ## 2. Project Virus
 
